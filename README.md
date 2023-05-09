@@ -1,17 +1,20 @@
 # Repo Dependency Checker
 
-Node script to check dependencies from organization's repositories.
+- Node script to check dependencies from organization's repositories.
+  - First will fetch all dependencies from a github organization (or file)
+  - Second exec all dependency check and audits on a dockerized environment.
+  - All results will be save on the infrastructure/reports in JSON format.
 
 ## Run
 
-- git clone https://github.com/Mouhajer-CO/repo-dependency-checker.git
+- git clone `https://github.com/Mouhajer-CO/repo-dependency-checker.git`
 - cd repo-dependency-checker
-- node src/index.js `your_org` // es. node index.js co-cddo
-- docker compose up
+- make start ORG=`your_org` // es. make start ORG=co-cddo
+- make docker-build
+- make docker-up
 
 ## TO DO
 
-- Create docker-compose and Docker files
-- Create scripts to run dependency checks
-- Create Makefile and related target ('dependency-checks', 'sonar-checks', 'install') 
+- Cross check dependecy and double ckeck docker scripts (avoid contaminations)
+- Create git Auth Token to get private repos
 - Complete DOCs and Test coverage

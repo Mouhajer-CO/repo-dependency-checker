@@ -1,9 +1,12 @@
 {
   "name": "repo-dependency-checker",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Repo Dependency Checker",
+  "main": "src/main.js",
   "type": "module",
+  "scripts": {
+    "start": "node src/main.js ${ORG}"
+  },
   "dependencies": {
     "asynckit": "^0.4.0",
     "axios": "^0.27.2",
@@ -14,9 +17,6 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "author": "Mouhajer-CO",
+  "license": "MIT"
 }
