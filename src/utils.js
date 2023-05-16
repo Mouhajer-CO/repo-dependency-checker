@@ -45,7 +45,7 @@ export const getInfoFromOrganizationRepos = (repo) => {
 
     const fileUrl = `https://raw.githubusercontent.com/${org}/${repoName}/${branch}`;
 
-    return { repoName, org, filter, fileUrl, branch }
+    return { repoName, org, filter, fileUrl, branch };
 }
 
 // ************************************************************ //
